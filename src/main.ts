@@ -12,3 +12,8 @@ app.use(createPinia());
 app.use(router);
 
 app.mount('#app');
+
+// declare let x: number;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, prefer-const
+// x = 123; // 报错
+
