@@ -10,15 +10,15 @@ import { VantResolver } from '@vant/auto-import-resolver';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   server: {
     port: 8080,
     proxy: {
       '/api': 'http://localhost:8000',
-      '/imgs': 'http://localhost:8000'
-    }
+      '/imgs': 'http://localhost:8000',
+    },
   },
   plugins: [
     vue(),
@@ -26,6 +26,6 @@ export default defineConfig({
     Components({
       dts: 'src/components.d.ts', // generate `components.d.ts` global declarations
       resolvers: [VantResolver()],
-    })
+    }),
   ],
 });
