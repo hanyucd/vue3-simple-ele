@@ -3,6 +3,13 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
+  },
+  globals: {},
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',

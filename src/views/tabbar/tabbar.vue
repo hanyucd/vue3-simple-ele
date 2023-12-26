@@ -2,11 +2,11 @@
   <div>
     <router-view />
 
-    <VanTabbar v-model="tabActive">
-    <VanTabbarItem name="indexRoute" icon="home-o">首页</VanTabbarItem>
-    <VanTabbarItem name="orderRoute" icon="bars">订单</VanTabbarItem>
-    <VanTabbarItem name="profileRoute" icon="contact">我的</VanTabbarItem>
-  </VanTabbar>
+    <van-tabbar v-model="tabActive">
+      <van-tabbar-item name="indexRoute" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item name="orderRoute" icon="bars">订单</van-tabbar-item>
+      <van-tabbar-item name="profileRoute" icon="contact">我的</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
@@ -19,12 +19,10 @@ const route = useRoute();
 const tabActive = ref(route.name as string); // tab 激活
 // console.log(route.name);
 
-watch(tabActive, newVal => {
+watch(tabActive, (newVal) => {
   console.log(newVal);
-  router.push({ name: newVal});
+  router.push({ name: newVal });
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

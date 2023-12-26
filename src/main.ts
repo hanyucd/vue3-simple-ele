@@ -6,6 +6,7 @@ import App from './App.vue';
 import router from './router';
 
 import 'vant/es/dialog/style';
+import 'amfe-flexible';
 
 const app = createApp(App);
 
@@ -13,7 +14,3 @@ app.use(createPinia());
 app.use(router);
 
 app.mount('#app');
-
-// declare let x: number;
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, prefer-const
-// x = 123; // 报错
