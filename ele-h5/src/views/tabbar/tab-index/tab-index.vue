@@ -1,17 +1,20 @@
 <template>
-  <div class="box">首页</div>
-
-  <!-- <HelloWorld /> -->
+  <TheTop :recomments="recomments" />
 </template>
 
 <script setup lang="ts">
-// import HelloWorld from '@/components/HelloWorld.vue';
+import TheTop from './components/TheTop/TheTop.vue';
+
+const recomments = [
+  {
+    value: 1,
+    label: '牛腩',
+  },
+  {
+    value: 2,
+    label: '色拉',
+  },
+];
 </script>
 
-<style lang="scss" scoped>
-.box {
-  width: 355px;
-  height: 375px;
-  background: red;
-}
-</style>
+<style lang="scss" scoped></style>

@@ -31,7 +31,6 @@ http.interceptors.request.use(
  * 响应拦截器
  */
 http.interceptors.response.use(
-  // @ts-ignore
   (res: AxiosResponse) => {
     // console.log(res);
     const resData = res.data;

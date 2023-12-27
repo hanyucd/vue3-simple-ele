@@ -15,15 +15,15 @@ const router = createRouter({
       children: [
         { path: '/index', name: 'indexRoute', component: tabIndex },
         { path: '/order', name: 'orderRoute', component: tabOrder },
-        { path: '/profile', name: 'profileRoute', component: tabProfile }
-      ]
+        { path: '/profile', name: 'profileRoute', component: tabProfile },
+      ],
     },
     {
       path: '/login',
       name: 'loginRoute',
-      component: () => import('@/views/login/login.vue')
-    }
-  ]
+      component: () => import('@/views/login/login.vue'),
+    },
+  ],
 });
 
 export default router;

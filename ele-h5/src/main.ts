@@ -5,8 +5,10 @@ import { createPinia } from 'pinia';
 import App from './App.vue';
 import router from './router';
 
-import 'vant/es/dialog/style';
+import 'normalize.css/normalize.css';
 import 'amfe-flexible';
+
+import 'vant/es/dialog/style';
 
 const app = createApp(App);
 
