@@ -1,6 +1,6 @@
 # 移动端: ele-h5
 
-技术栈：vue3 + Typescript + Vite + Vant + Postcss + Pnpm + Eslint + Prettier
+技术栈：vue3 + Typescript + Pinia + Vite + Vant + Postcss + Pnpm + Eslint + Prettier
 
 ### 参考
 [eslint-plugin-vue中文文档](https://www.cnblogs.com/qq3279338858/p/16617032.html)
