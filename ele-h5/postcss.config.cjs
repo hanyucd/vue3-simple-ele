@@ -7,12 +7,13 @@ module.exports = {
     },
     'postcss-pxtorem': {
       // rootValue({ file }) {
-      //   return file.indexOf('vant') !== -1 ? 37.5 : 75;
+      //   return file.indexOf('vant') !== -1 ? 37.5 : 39;
       // },
-      rootValue: 37.5, // 根元素字体大小
+      // rootValue: 37,5, // 根元素字体大小
+      rootValue: 16, // 根元素字体大小
       unitPrecision: 6, // 转换后的精度，即小数点后保留的位数
       propList: ['*'], // 可以从px转换为rem的属性，匹配正则
-      selectorBlackList: [], // 要忽略并保留为 px 的选择器
+      selectorBlackList: [':root'], // 要忽略并保留为 px 的选择器
       mediaQuery: true, // 是否在媒体查询的css代码中也进行转换，默认false
       minPixelValue: 1, // 默认值1，小于或等于1px则不进行转换
     },

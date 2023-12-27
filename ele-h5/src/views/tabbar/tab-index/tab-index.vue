@@ -1,5 +1,7 @@
 <template>
   <TheTop :recomments="recomments" />
+
+  <HelloWorld :msg="'fgg'" />
 </template>
 
 <script setup lang="ts">

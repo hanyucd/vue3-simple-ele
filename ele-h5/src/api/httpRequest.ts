@@ -13,7 +13,7 @@ const http: AxiosInstance = axios.create({
 http.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     // 在发送请求之前做些什么
-    console.log(config);
+    // console.log(config);
 
     return config;
   },
@@ -22,11 +22,6 @@ http.interceptors.request.use(
   },
 );
 
-// type axiosResponse = {
-//   code: string;
-//   data: any;
-//   message: string;
-// };
 /**
  * 响应拦截器
  */

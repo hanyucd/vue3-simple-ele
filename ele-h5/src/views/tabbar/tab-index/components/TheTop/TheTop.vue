@@ -7,11 +7,11 @@
       <img class="comments-icon" src="@/assets/imgs/index_page/comments.png" />
     </div>
 
-    <VanSearch shape="round" background="linear-gradient(to right, rgb(53, 200, 250), rgb(31, 175, 243))" placeholder="布鲁斯披萨">
+    <OpSearch shape="round" background="linear-gradient(to right, rgb(53, 200, 250), rgb(31, 175, 243))" placeholder="世界茶饮 35减2">
       <template #right-icon>
         <div>搜索</div>
       </template>
-    </VanSearch>
+    </OpSearch>
 
     <div class="search-recomend">
       <div v-for="v in recomments" :key="v.value" class="tag">{{ v.label }}</div>
@@ -25,9 +25,6 @@ import type { ISearchRecomment } from '@/types/home';
 interface IProps {
   recomments: ISearchRecomment[];
 }
-
-// let str: string = 988;
-
 defineProps<IProps>();
 </script>
 

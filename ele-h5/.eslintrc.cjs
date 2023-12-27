@@ -5,9 +5,8 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    commonjs: true,
-    es6: true,
     node: true,
+    commonjs: true,
   },
   globals: {},
   // 指定如何解析语法
@@ -39,6 +38,7 @@ module.exports = {
 
     // typeScript (https://typescript-eslint.io/rules)
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
 
     // vue (https://eslint.vuejs.org/rules)
     'vue/singleline-html-element-content-newline': 'off', // 在单行元素的内容前后需要换行符
