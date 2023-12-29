@@ -1,11 +1,20 @@
 <template>
-  <TheTop :recomments="recomments" />
+  <Transition name="fade">
+    <SearchView v-if="isSearchViewShow" @cancel="toggleSearchView" />
+  </Transition>
 
-  <HelloWorld :msg="'fgg'" />
+  <div v-show="!isSearchViewShow">
+    <TheTop :recomments="recomments" @searchClick="toggleSearchView" />
+    <HelloWorld :msg="'fgg'" />
+  </div>
 </template>
 
 <script setup lang="ts">
 import TheTop from './components/TheTop/TheTop.vue';
+import { useToggleHook } from '@/hooks/useToggleHook';
+
+// 数组解构
+const [isSearchViewShow, toggleSearchView] = useToggleHook(false);
 
 const recomments = [
   {

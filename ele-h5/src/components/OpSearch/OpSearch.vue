@@ -63,8 +63,8 @@ const onKeypress = (e: KeyboardEvent) => {
 };
 
 const onClear = () => {
-  emits('clear');
-  emits('search', '');
+  emits('update:modelValue', '');
+  emits('search');
 };
 </script>
 

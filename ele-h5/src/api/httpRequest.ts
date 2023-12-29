@@ -39,6 +39,8 @@ http.interceptors.response.use(
       return Promise.reject(resData.msg);
     }
 
+    console.log(resData);
+
     return resData;
   },
   (error: AxiosError) => {

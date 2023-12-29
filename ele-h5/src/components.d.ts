@@ -11,6 +11,7 @@ declare module 'vue' {
     OpSearch: typeof import('./components/OpSearch/OpSearch.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchView: typeof import('./components/SearchView/SearchView.vue')['default']
     VanIcon: typeof import('vant/es')['Icon']
     VanTabbar: typeof import('vant/es')['Tabbar']
     VanTabbarItem: typeof import('vant/es')['TabbarItem']
