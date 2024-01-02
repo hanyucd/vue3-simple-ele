@@ -28,4 +28,6 @@ const recomments = [
 ];
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@import './style.scss';
+</style>

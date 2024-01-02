@@ -1,8 +1,14 @@
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s ease;
+.list-enter-active {
+  transition: all 0.4s ease;
 }
-.fade-enter-from, .fade-leave-to {
+
+// .list-leave-active {
+//   transition: all 0.4s ease;
+// }
+
+.list-enter-from, .list-leave-to {
   opacity: 0;
+  transform: translateY(30px);
 }
 
 .search-view {
@@ -13,6 +19,22 @@
   right: 0;
   background-color: #fff;
   z-index: 999;
+  &__history {
+    padding: var(--van-padding-sm);
+    .label {
+      margin-bottom: var(--van-padding-xs);
+    }
+    .history-tag {
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 10px;
+      color: var(--van-gray-6);
+      background: var(--van-gray-1);
+      padding: 4px 8px;
+      margin-right: 10px;
+      margin-bottom: var(--van-padding-xs);
+    }
+  }
   &__result {
     .result-item {
       display: flex;
