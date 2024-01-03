@@ -10,6 +10,7 @@ import 'normalize.css/normalize.css';
 // import 'amfe-flexible';
 
 import 'vant/es/dialog/style';
+import './assets/common.scss';
 
 const app = createApp(App);
 
