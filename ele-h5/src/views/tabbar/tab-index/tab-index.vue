@@ -12,6 +12,10 @@
         </div>
         <TheTransformer :data="data.transformer" />
         <ScrollBar :data="data.scrollBarInfoList" :height="40" />
+
+        <div class="home-page__activity">
+          <CountDown :data="data.countdown" />
+        </div>
       </OpLoadingView>
     </div>
   </div>
@@ -21,6 +25,7 @@
 import TheTop from './components/TheTop/TheTop.vue';
 import TheTransformer from './components/TheTransformer/TheTransformer.vue';
 import ScrollBar from './components/ScrollBar/ScrollBar.vue';
+import CountDown from './components/CountDown/CountDown.vue';
 
 import { useToggleHook } from '@/hooks/useToggleHook';
 import { useAsyncHook } from '@/hooks/useAsyncHook';
